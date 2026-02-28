@@ -52,31 +52,7 @@ body {
 }
 
 /* Bi-lingual setup */
-[data-th] {
-    display: none;
-    /* Hide Thai by default */
-}
-
-body.lang-th [data-en] {
-    display: none !important;
-}
-
-body.lang-th [data-th] {
-    display: inline-block !important;
-    /* Forces TH text to show */
-}
-
-/* Ensure block elements remain blocks when showing TH */
-body.lang-th p[data-th],
-body.lang-th h1[data-th],
-body.lang-th h2[data-th],
-body.lang-th h3[data-th],
-body.lang-th h4[data-th],
-body.lang-th h5[data-th],
-body.lang-th div[data-th],
-body.lang-th span.hero-badge[data-th] {
-    display: block !important;
-}
+/* Javascript now handles text content replacement using data-en and data-th attributes */
 
 img {
     max-width: 100%;
