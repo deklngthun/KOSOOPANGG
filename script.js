@@ -45,25 +45,16 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- Intersection Observer for Scroll Animations ---
-    const observerOptions = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.15 // Trigger when 15% of element is visible
-    };
+    // Initialize language text Content on load regardless of cached or default state
+    updateTextContent(currentLang);
 
-    const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('is-visible');
-                observer.unobserve(entry.target); // Stop observing once animated
-            }
-        });
-    }, observerOptions);
-
-    // Select all elements with animation classes
-    const animatedElements = document.querySelectorAll('.fade-in-up, .fade-in-left, .fade-in-right');
-    animatedElements.forEach(el => observer.observe(el));
+    // --- Initialize AOS (Animate On Scroll) ---
+    AOS.init({
+        duration: 800,
+        easing: 'ease-out-cubic',
+        once: true,
+        offset: 80,
+    });
 
 
     // --- Smooth Scrolling for Navigation Links ---

@@ -12,7 +12,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=2">
     <!-- Boxicons for modern icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
@@ -53,7 +54,7 @@
             <img src="milk_bread_hero_1772295349607.png" alt="Premium Milk Bread" class="hero-img">
             <div class="hero-overlay"></div>
         </div>
-        <div class="container hero-content fade-in-up">
+        <div class="container hero-content" data-aos="fade-up">
             <span class="hero-badge" data-en="Baked Fresh Daily" data-th="อบสดใหม่ทุกวัน">Baked Fresh Daily</span>
             <h1 class="hero-title">
                 <span data-en="Experience the Softest" data-th="สัมผัสความนุ่มนวลที่สุด">Experience the
@@ -78,10 +79,10 @@
     <!-- About Section -->
     <section id="about" class="section about-section">
         <div class="container about-grid">
-            <div class="about-image-wrapper fade-in-left">
+            <div class="about-image-wrapper" data-aos="fade-right">
                 <img src="bakery_interior_1772295367795.png" alt="KOSOOPANGG Bakery Interior" class="about-img">
             </div>
-            <div class="about-text fade-in-right">
+            <div class="about-text" data-aos="fade-left">
                 <h2 class="section-title" data-en="About Our Milk Bread" data-th="เกี่ยวกับขนมปังนมของเรา">About Our
                     Milk Bread</h2>
                 <div class="title-underline"></div>
@@ -110,7 +111,7 @@
     <!-- Menu Section -->
     <section id="menu" class="section menu-section bg-light">
         <div class="container">
-            <div class="section-header text-center fade-in-up">
+            <div class="section-header text-center" data-aos="fade-up">
                 <h2 class="section-title" data-en="Products We Offer" data-th="สินค้าของเรา">Products We Offer</h2>
                 <div class="title-underline center"></div>
                 <p class="section-subtitle" data-en="Discover our range of handcrafted, artisanal breads."
@@ -120,7 +121,7 @@
 
             <div class="menu-grid">
                 <!-- Product 1 -->
-                <div class="menu-card fade-in-up delay-1">
+                <div class="menu-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="menu-img-container">
                         <img src="milk_bread_products_1772295382677.png" alt="Signature Milk Loaf"
                             class="menu-card-img">
@@ -139,7 +140,7 @@
                 </div>
 
                 <!-- Product 2 -->
-                <div class="menu-card fade-in-up delay-2">
+                <div class="menu-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="menu-img-container">
                         <img src="milk_bread_products_1772295382677.png" alt="Butter Milk Buns" class="menu-card-img"
                             style="filter: hue-rotate(15deg) brightness(1.1);"> <!-- Faux variation -->
@@ -158,7 +159,7 @@
                 </div>
 
                 <!-- Product 3 -->
-                <div class="menu-card fade-in-up delay-3">
+                <div class="menu-card" data-aos="fade-up" data-aos-delay="300">
                     <div class="menu-img-container">
                         <img src="milk_bread_products_1772295382677.png" alt="Premium Toast" class="menu-card-img"
                             style="filter: saturate(1.2) contrast(1.1);"> <!-- Faux variation -->
@@ -177,7 +178,7 @@
                 </div>
             </div>
 
-            <div class="text-center mt-4 fade-in-up delay-4">
+            <div class="text-center mt-4" data-aos="fade-up" data-aos-delay="400">
                 <a href="#contact" class="btn btn-secondary" data-en="Order Now" data-th="สั่งซื้อเลย">Order Now</a>
             </div>
         </div>
@@ -186,28 +187,28 @@
     <!-- Why Us Section -->
     <section id="why-us" class="section why-section">
         <div class="container">
-            <div class="section-header text-center fade-in-up">
+            <div class="section-header text-center" data-aos="fade-up">
                 <h2 class="section-title" data-en="Why Choose KOSOOPANGG" data-th="ทำไมถึงเลือก KOSOOPANGG">Why Choose
                     KOSOOPANGG</h2>
                 <div class="title-underline center"></div>
             </div>
 
             <div class="benefits-grid">
-                <div class="benefit-card fade-in-up delay-1">
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="benefit-icon"><i class='bx bx-award'></i></div>
                     <h3 data-en="Unmatched Quality" data-th="คุณภาพที่เหนือชั้น">Unmatched Quality</h3>
                     <p data-en="We compromise on nothing. Only the finest ingredients make it into our bakery."
                         data-th="เราไม่ประนีประนอมกับสิ่งใด ใช้เฉพาะส่วนผสมที่ดีที่สุดเท่านั้น">We compromise on
                         nothing. Only the finest ingredients make it into our bakery.</p>
                 </div>
-                <div class="benefit-card fade-in-up delay-2">
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="benefit-icon"><i class='bx bx-time-five'></i></div>
                     <h3 data-en="Baked Fresh Limit" data-th="อบสดใหม่จำกัดจำนวน">Baked Fresh Limit</h3>
                     <p data-en="We bake in small batches daily to guarantee that you get the freshest bread possible."
                         data-th="เราอบในปริมาณน้อยทุกวันเพื่อให้แน่ใจว่าคุณจะได้รับขนมปังที่สดใหม่ที่สุด">We bake in
                         small batches daily to guarantee that you get the freshest bread possible.</p>
                 </div>
-                <div class="benefit-card fade-in-up delay-3">
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="300">
                     <div class="benefit-icon"><i class='bx bx-heart'></i></div>
                     <h3 data-en="Customer Satisfaction" data-th="ความพึงพอใจของลูกค้า">Customer Satisfaction</h3>
                     <p data-en="Our bread brings joy. Hundreds of happy customers return every week."
@@ -221,14 +222,14 @@
     <!-- Testimonials Section -->
     <section id="reviews" class="section testimonial-section bg-light">
         <div class="container">
-            <div class="section-header text-center fade-in-up">
+            <div class="section-header text-center" data-aos="fade-up">
                 <h2 class="section-title" data-en="What Our Customers Say" data-th="สิ่งที่ลูกค้าบอกเรา">What Our
                     Customers Say</h2>
                 <div class="title-underline center"></div>
             </div>
 
             <div class="testimonial-grid">
-                <div class="testimonial-card fade-in-up delay-1">
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="stars">
                         <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
                             class='bx bxs-star'></i><i class='bx bxs-star'></i>
@@ -240,7 +241,7 @@
                         incredibly rich.”</p>
                     <p class="reviewer-name">— Sarah T.</p>
                 </div>
-                <div class="testimonial-card fade-in-up delay-2">
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="stars">
                         <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
                             class='bx bxs-star'></i><i class='bx bxs-star'></i>
@@ -251,7 +252,7 @@
                         buy a loaf every weekend for my family. KOSOOPANGG is a must-visit. Highly recommended!”</p>
                     <p class="reviewer-name">— Mark L.</p>
                 </div>
-                <div class="testimonial-card fade-in-up delay-3">
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
                     <div class="stars">
                         <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
                             class='bx bxs-star'></i><i class='bx bxs-star'></i>
@@ -269,7 +270,7 @@
     <!-- Contact & Final CTA -->
     <section id="contact" class="section contact-section">
         <div class="container contact-grid">
-            <div class="cta-box fade-in-left">
+            <div class="cta-box" data-aos="fade-right">
                 <h2 class="cta-title" data-en="Ready to Taste the Best?"
                     data-th="พร้อมที่จะลิ้มลองสิ่งที่ดีที่สุดหรือยัง?">Ready to Taste the Best?</h2>
                 <p class="cta-desc"
@@ -288,7 +289,7 @@
                 </div>
             </div>
 
-            <div class="info-box fade-in-right">
+            <div class="info-box" data-aos="fade-left">
                 <h3 class="info-title" data-en="Visit Our Shop" data-th="เยี่ยมชมร้านของเรา">Visit Our Shop</h3>
                 <div class="info-item">
                     <i class='bx bx-map'></i>
@@ -340,7 +341,8 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js?v=2"></script>
 </body>
 
 </html>
